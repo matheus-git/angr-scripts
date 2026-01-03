@@ -14,7 +14,6 @@ def main():
     input_arg = claripy.Concat(*chars)
 
     state = proj.factory.blank_state(addr=0x555555555539)
-
     
     for k in chars:
         state.solver.add(k < 0x7f)
